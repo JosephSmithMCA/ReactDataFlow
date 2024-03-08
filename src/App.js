@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Body from './components/Body'
 
 function App(){
-    const [counter, setCounter] = React.useState(0)
+    
 
     return(
         <div className="container">
