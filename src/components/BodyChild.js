@@ -1,7 +1,7 @@
 import BodyGrandChild from './BodyGrandChild'
 import BodyGrandChildTwo from './BodyGrandChildTwo'
 
-function BodyChild({Adder}){
+function BodyChild({Adder, toggle}){
 
 
     return(
@@ -14,7 +14,7 @@ function BodyChild({Adder}){
                     <BodyGrandChild Adder = {Adder}/>
                 </div>
                 <div className="col-sm-6">
-                    <BodyGrandChildTwo/>
+                    <BodyGrandChildTwo toggle = {toggle}/>
                 </div>
             </div>
         </div>

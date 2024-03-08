@@ -2,7 +2,7 @@ import React from 'react'
 import BodyChild from './BodyChild'
 import BodyChildTwo from './BodyChildTwo'
 
-function Body({number}){
+function Body({toggle}){
     //this is destructing
     //literally the same as props
     const [countUp, setCountUp] = React.useState(0)
@@ -22,7 +22,7 @@ function Body({number}){
             </div>
             <div className="row">
                 <div className="col-sm-6">
-                    <BodyChild Adder = {Add}/>
+                    <BodyChild Adder = {Add} toggle = {toggle}/>
                 </div>
                 <div className="col-sm-6">
                     <BodyChildTwo bigNum = {countUp}/>

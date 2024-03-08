@@ -1,7 +1,7 @@
 import HeaderChild from './HeaderChild'
 import HeaderChildTwo from './HeaderChildTwo'
 
-function Header(){
+function Header({name ,isShown}){
 
 
     return(
@@ -9,7 +9,7 @@ function Header(){
             <div className="row text-center">
                 <h1>Im the Header</h1>
                 <div className="col-sm-6">
-                    <HeaderChild/>
+                    <HeaderChild name = {name} isShown = {isShown}/>
                 </div>
                 <div className="col-sm-6">
                     <HeaderChildTwo/>

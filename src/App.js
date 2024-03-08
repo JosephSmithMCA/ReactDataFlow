@@ -3,7 +3,13 @@ import Header from './components/Header';
 import Body from './components/Body'
 
 function App(){
-    
+    const [isShown, setIsShown] = React.useState(false)
+    const [name, setName] = React.useState('Joseph')
+
+
+    function toggleShown(){
+        setIsShown(prevIsShown => !prevIsShown)
+    }
 
     return(
         <div className="container">
@@ -12,10 +18,10 @@ function App(){
             </div>
             <div className="row">
                 <div className="col-sm-6">
-                    <Header/>
+                    <Header name = {name} isShown = {isShown}/>
                 </div>
                 <div className="col-sm-6">
-                    <Body/>
+                    <Body toggle = {toggleShown}/>
                 </div>
             </div>
         </div>
